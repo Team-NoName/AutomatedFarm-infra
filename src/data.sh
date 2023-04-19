@@ -26,8 +26,8 @@ genJSON() {
                     --arg plant "$PLANT_DATA" \
                     "{"humidity": \"$HUMIDITY_DATA\", "temperature": \"$TEMPERATURE_DATA\", "soilmoisture": \"$SOILMOISTURE_DATA\", "airquality": \"$PPM_DATA\", "plant": \"$PLANT_DATA\"}")
     echo $GEN_JSON_BODY
-    if [[ -f json/data.json ]]; then
-        rm json/data.json
+    if [[ -f $WORK_DIR/json/plant.json ]]; then
+        rm $WORK_DIR/json/plant.json
     fi
     echo "$GEN_JSON_BODY" >> json/plant.json
 }
