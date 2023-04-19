@@ -8,6 +8,7 @@
 
 if [[ -z "$(which picocom)" ]]; then
     echo "error: Install picocom package!"
+    exit 125
 fi
 
 sudo picocom -b 9600 /dev/ttyACM1 | tee /home/saalim/AutomatedFarm-infra/logs.txt
