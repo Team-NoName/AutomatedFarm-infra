@@ -1,0 +1,12 @@
+[Unit]
+Description=Manipulate data Service
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/home/suraj/AutomatedFarm-infra/src/data.sh
+Restart=always
+RestartSec=60
+
+[Install]
+WantedBy=multi-user.target
