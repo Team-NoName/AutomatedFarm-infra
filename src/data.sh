@@ -29,7 +29,7 @@ genJSON() {
     if [[ -f $WORK_DIR/json/plant.json ]]; then
         rm $WORK_DIR/json/plant.json
     fi
-    echo "$GEN_JSON_BODY" >> json/plant.json
+    echo "$GEN_JSON_BODY" >> $WORK_DIR/json/plant.json
 }
 
 genJSON

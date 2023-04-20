@@ -11,4 +11,4 @@ if [[ -z "$(which picocom)" ]]; then
     exit 125
 fi
 
-sudo picocom -b 9600 /dev/ttyACM1 | tee /home/saalim/AutomatedFarm-infra/logs.txt
+sudo picocom -b 9600 /dev/ttyUSB0 | tee /home/suraj/AutomatedFarm-infra/logs.txt
