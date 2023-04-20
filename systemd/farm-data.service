@@ -6,7 +6,7 @@ After=network.target
 Type=simple
 ExecStart=/home/suraj/AutomatedFarm-infra/src/data.sh
 Restart=always
-RestartSec=1
+RestartSec=60
 
 [Install]
 WantedBy=multi-user.target

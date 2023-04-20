@@ -12,6 +12,8 @@ JSON_FILE="$WORK_DIR/json/plant.json"
 
 git config --global --add safe.directory /home/suraj/AutomatedFarm-infra
 
+cd $WORK_DIR
+
 # Get the Git status of the file
 status=$(git status --porcelain "$JSON_FILE")
 
