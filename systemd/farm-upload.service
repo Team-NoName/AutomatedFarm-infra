@@ -1,0 +1,12 @@
+[Unit]
+Description=Push JSON Service
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/home/suraj/AutomatedFarm-infra/src/check-upload.sh
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
